@@ -1,0 +1,131 @@
+* {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.app {
+  display:grid;
+    height: 100%;
+    width: 100%;
+    /* background-color: #000; */
+    /* border: #444; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+.color-button {
+    /* justify-content: center; */
+    /* margin-bottom: 0px; */
+    /* padding: 10px 20px; */
+    font-size: 16px;
+    background-color: #444;
+    color: white;
+    border: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.color-button:hover {
+    background-color: #666;
+  }
+
+.container {
+    display: grid;
+    gap: 3px;
+    background-color: black;
+    justify-content: center;
+    padding: 20px;
+    border: 2px solid #444;
+  }
+
+.row {
+    display: flex;
+    /* border: 1px solid #fff; */
+    /* gap: 0; */
+    /* border-spacing: 1px; */
+    /* padding: 1%; */
+  }
+
+.cell {
+    width: 20px;
+    height: 20px;
+    border-spacing: 1px;
+    /* border-radius: 3px; */
+    padding: 0px;
+    /* border: 1px solid #fff; */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    /* background-color: black; */
+    transition: opacity 0.2s;
+  }
+
+.control-button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.control-button:hover {
+    background-color: #666;
+  }
+
+@media (max-width: 768px) {
+  .container {
+    gap: 2px;
+  }
+
+  .cell {
+    width: 12px;
+    height: 12px;
+  }
+
+  .control-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    gap: 3px;
+  }
+
+  .cell {
+    width: 15px;
+    height: 15px;
+  }
+
+  .control-button {
+    font-size: 15px;
+    padding: 9px 18px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .container {
+    gap: 3px;
+  }
+
+  .cell {
+    width: 18px;
+    height: 18px;
+  }
+
+  .control-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}

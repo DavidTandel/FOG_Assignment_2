@@ -1,0 +1,43 @@
+.gridContainer {
+  display: grid;
+  grid-template-rows: repeat(15, 30px);  /* Set the number of rows and row height */
+  grid-template-columns: repeat(10, 30px);  /* Set the number of columns and column width */
+  gap: 2px;
+  background-color: #333;  /* Dark background for the grid */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.gridRow {
+  display: flex;
+}
+
+.gridCell {
+  width: 30px;
+  height: 30px;
+  background-color: transparent; /* Default transparent color */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.falling-enter {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.falling-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.falling-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.falling-exit-active {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s, transform 0.5s;
+}
